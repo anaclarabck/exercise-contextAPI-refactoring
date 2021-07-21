@@ -6,12 +6,12 @@ import { connect } from 'react-redux';
 import carBlue from './images/carBlue.jpeg';
 import carRed from './images/carRed.jpeg';
 import carYellow from './images/carYellow.jpeg';
-import MyContext from './MyContext';
+import CarsContext from './CarsContext';
 import { moveCar } from './redux/actionCreators';
 
 function Cars({ redCar, blueCar, yellowCar, moveCar }) {
   return (
-    <MyContext.Consumer>
+    <CarsContext.Consumer>
       { value => (
         <div>
           <div>
@@ -55,7 +55,7 @@ function Cars({ redCar, blueCar, yellowCar, moveCar }) {
           </div>
         </div>
       )}
-    </MyContext.Consumer>
+    </CarsContext.Consumer>
   );
 }
 
