@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
 import Cars from './Cars';
-import MyContext from './MyContext'
+import CarsContext from './CarsContext'
 
 class App extends Component {
   constructor() {
@@ -29,9 +29,9 @@ class App extends Component {
     }
 
     return (
-      <MyContext.Provider value={ contextValue }>
+      <CarsContext.Provider value={ contextValue }>
         <Cars />
-      </MyContext.Provider>
+      </CarsContext.Provider>
     )
   }
 }
